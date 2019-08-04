@@ -1,0 +1,27 @@
+let
+	var x: Integer;
+	var n: Integer;
+	var result: Integer
+in
+begin
+
+	getint(var x); 
+	getint(var n);
+	result := 1;
+    while (n > 0) do
+	begin
+		result := x * result;
+		put(' ');
+		putint(result);
+		n := n -1;
+	end;
+
+	repeat
+	begin
+	    result := x * result;
+	    put(' ');
+	    putint(result);
+	    n := n + 1;
+	end
+	until (n=3);
+end
